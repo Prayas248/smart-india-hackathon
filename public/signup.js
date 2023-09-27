@@ -1,8 +1,8 @@
 
-  var fire = firebase.database().ref("ads");
-  var teesra = document.getElementById("ads");
+  var fire = firebase.database().ref("Logup");
+  var teesra = document.getElementById("Logup");
   if(teesra){
-  document.getElementById("ads").addEventListener("submit", submitForm);
+  document.getElementById("Logup").addEventListener("submit", submitForm);
   }
   function submitForm(e) {
     e.preventDefault();
@@ -15,8 +15,8 @@
   }
   var saveMessage = (name,emaili,passpass) => {
     
-    var adsRef = firebase.database().ref("ads");
-    var newContactForm = adsRef.push();
+    var LogupRef = firebase.database().ref("Logup");
+    var newContactForm = LogupRef.push();
     
     newContactForm.set({
       

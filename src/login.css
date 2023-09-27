@@ -4,11 +4,13 @@
         box-sizing: border-box;
         margin: 0; 
         padding: 0;
+
     }
     
     body {
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
         background: #ffffff;
+           
     }
     
     input,
@@ -33,6 +35,7 @@
         height: 550px;
         margin: 0 auto 100px;
         background: #fff;
+        transform: translateY(30%);
         box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.3), 10px 10px 15px rgba(70, 70, 70, 0.15), inset -10px -10px 15px rgba(255, 255, 255, 0.3), inset 10px 10px 15px rgba(70, 70, 70, 0.15);
     }
     
@@ -133,6 +136,10 @@
         transition: transform 1.2s ease-in-out;
         transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
     }
+    .bold{
+        color: #000;
+    }
+    
     
     .img__text h2 {
         margin-bottom: 10px;
@@ -588,4 +595,7 @@
     .cont.s--signup .sign-up {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
+    }
+    .forgot-pass{
+        color: #000;
     }

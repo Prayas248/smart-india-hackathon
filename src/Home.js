@@ -1,6 +1,7 @@
 import "./styles.css";
 import { useEffect } from "react";
 import { SectionContainer } from "./SectionContainer";
+import { Footer } from "./Footer";
 
 export const Home = () => {
   useEffect(() => {
@@ -85,6 +86,7 @@ export const Home = () => {
       </section>
       </div>
       <SectionContainer />
+      <Footer />
     </>
   );
 };
